@@ -1,15 +1,15 @@
 {
-  "name": "Credencial FdW",
+  "name": "ChromeDev",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Ejemplo de extensión de Google Chrome que muestra tus datos en Foros del Web.",
+  "description": "Ejemplo de extensión de Google Chrome.",
   "icons": {
      "16": "icon.png",
      "48": "icon48.png",
      "128": "icon128.png"
             },
   "browser_action": {
-    "default_title": "Credencial FdW",
+    "default_title": "ChromeDev",
     "default_icon": "icon.png"
   }
 }
