@@ -1,8 +1,12 @@
 function mostrarDimensiones() {
   let anchoNavegador = document.body.clientWidth;
   let altoNavegador = document.body.clientHeight;
-  document.getElementById('anchoNavegador').innerHTML = anchoNavegador;
-  document.getElementById('altoNavegador').innerHTML = altoNavegador;
+
+
+  chrome.tabs.getSelected(null, function(tab){
+    document.getElementById('anchoNavegador').innerHTML = tab.width;
+    document.getElementById('altoNavegador').innerHTML = tab.height;
+  });
 }
 
 
