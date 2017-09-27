@@ -3,14 +3,31 @@
   <head>
     <style media="screen">
       html{
-        width: 150px;
+        width: 200px;
+      }
+      input#inputPass{
+        width: 67%;
+        float: left;
+      }
+      button#botonGenerar{
+        width: 30%;
+        float:right;
+      }
+
+      div#divGenerador{
+        height: 20px
       }
     </style>
   </head>
   <body>
-  <p>Width: <span id="anchoNavegador"></span>px</p>
-  <p>Height: <span id="altoNavegador"></span>px</p>
-  <span id="altoNavegador"></span>
+  <div id="divGenerador">
+    <input name="pass" id="inputPass" type="text">
+    <button id="botonGenerar">PASS</button>
+  </div>
+  <div>
+    <p>Width: <span id="anchoNavegador"></span>px</p>
+    <p>Height: <span id="altoNavegador"></span>px</p>
+  </div>
   <script type="text/javascript" src="popup.js"></script>
   </body>
 </html>
