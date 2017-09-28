@@ -3,30 +3,70 @@
   <head>
     <style media="screen">
       html{
-        width: 200px;
+        width: 400px;
       }
       input#inputPass{
         width: 67%;
         float: left;
+        margin-bottom: 10px;
       }
-      button#botonGenerar{
-        width: 30%;
+      button#botonGenerarPass{
+        width: 15%;
         float:right;
+        margin-bottom: 10px;
+      }
+
+      button#botonCopiarPass{
+        width: 15%;
+        float:right;
+        margin-bottom: 10px;
       }
 
       div#divGenerador{
-        height: 20px
+        height: 50px
       }
+
+      #selectLongitusPass, #checkMayus, #checkNum, #checkMin{
+        margin-right: 10px;
+      }
+      #checkMayus, #checkNum, #checkMin, #checkCarac{
+        margin-top: 4px;
+      }
+
     </style>
   </head>
   <body>
   <div id="divGenerador">
+
     <input name="pass" id="inputPass" type="text">
-    <button id="botonGenerar">PASS</button>
+    <button id="botonCopiarPass">COPY</button>
+    <button id="botonGenerarPass">PASS</button>
+
+    <label for="selectLongitusPass">Lenght</label>
+    <select id="selectLongitusPass" name="selectLongitusPass">
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="12">12</option>
+      <option value="16">16</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+
+    <label for="checkMayus">Upp</label>
+    <input name="checkMayus" type="checkbox" id="checkMayus" value="checkMayus">
+
+    <label for="checkMin">Low</label>
+    <input name="checkMin" type="checkbox" id="checkMin" value="checkMin">
+
+    <label for="checkNum">Num</label>
+    <input name="checkNum" type="checkbox" id="checkNum" value="checkNum">
+
+    <label for="checkCarac">Char</label>
+    <input name="checkCarac" type="checkbox" id="checkCarac" value="checkCarac">
+
   </div>
   <div>
-    <p>Width: <span id="anchoNavegador"></span>px</p>
-    <p>Height: <span id="altoNavegador"></span>px</p>
+    <p>Width: <span id="anchoNavegador"></span>px X Height: <span id="altoNavegador"></span>px</p>
   </div>
   <script type="text/javascript" src="popup.js"></script>
   </body>
