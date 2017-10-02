@@ -13,7 +13,34 @@ function mostrarDimensiones() {
     document.getElementById("botonCopiarLorem").addEventListener("click", funcionCopiarLorem);
 
     function funcionGenerarPass() {
-      var cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+
+      var checkMayus = document.getElementById('checkMayus').checked;
+      var checkMin = document.getElementById('checkMin').checked;
+      var checkNum = document.getElementById('checkNum').checked;
+      var checkCarac = document.getElementById('checkCarac').checked;
+
+      var cadenaMayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var cadenaMin = "abcdefghijklmnopqrstuvwxyz";
+      var cadenaNum = "1234567890";
+      var cadenaCarac = ",.-_*+{}<>:[]";
+      var cadena = "";
+
+      if(checkMayus){
+        cadena += cadenaMayus;
+      }
+
+      if(checkMin){
+        cadena += cadenaMin;
+      }
+
+      if(checkNum){
+        cadena += cadenaNum;
+      }
+
+      if(checkCarac){
+        cadena += cadenaCarac;
+      }
+
       var longitudCadena = cadena.length;
       var pass = "";
       var longitudPass= document.getElementById("selectLongitudPass").value;
