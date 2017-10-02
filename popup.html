@@ -52,11 +52,10 @@
 
       #divLorem{
         height: 50px;
-        margin-top: 10px;
+        margin-top: 63px;
       }
 
       #divLorem button{
-        margin-top: 20px;
         width: 30%;
       }
 
@@ -82,6 +81,8 @@
         height: 33px;
         color: #FFF;
         background: silver;
+        font-weight: bold;
+        font-size: 13px;
       }
       #pDivInfo{
         padding: 10px;
@@ -91,18 +92,32 @@
         margin-top: 20px;
       }
 
+      #divBase{
+        margin-top: 53px;
+      }
+
+      #divBase input{
+        height: 26px;
+        border: 1px solid #000;
+        width: 47%;
+      }
+
+      .titulo_div{
+        font-weight: bold;
+      }
+
     </style>
   </head>
   <body>
 
 
   <div id="divInfo">
-    <p id="pDivInfo">ChromeDev | <span id="spanInfo"></span></p>
+    <p id="pDivInfo">ChromeDev <span id="spanInfo"></span></p>
   </div>
 
 
   <div id="divGenerador">
-
+    <p class="titulo_div">| Generador de contraseña</p>
     <input name="pass" id="inputPass" type="text">
     <button id="botonCopiarPass">COPY</button>
     <button id="botonGenerarPass">PASS</button>
@@ -132,11 +147,13 @@
   </div>
 
   <div id="divLorem">
-    <button id="botonCopiarLorem">LOREM IPSUM</button>
+    <p class="titulo_div">| Generador Loren Ipsum</p>
     <input name="inputLorem" id="inputLorem" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus, odio quis posuere suscipit, magna tortor accumsan lectus, a dictum eros risus ut diam. Maecenas viverra justo ut elit tempus, dapibus consectetur libero ultrices. Mauris viverra arcu et ipsum pharetra, non viverra ex pharetra. Ut congue tortor eu lorem dapibus, sed tristique diam luctus. Sed euismod commodo ligula, eget viverra diam luctus quis. Nullam tincidunt diam at tortor posuere gravida. Praesent maximus neque fringilla, interdum lectus non, efficitur nibh. Cras convallis pharetra ante, eget commodo nibh venenatis vel. Cras laoreet velit quam, vel porttitor justo tristique vel.">
+    <button id="botonCopiarLorem">LOREM IPSUM</button>
   </div>
 
   <div id="divBase">
+    <p class="titulo_div">| Base64 Encode & Decode</p>
     <input type="text" name="inputBase" id="inputBase" value="">
     <button id="botonEncodeBase">ENCODE</button>
     <button id="botonDecodeBase">DECODE</button>
@@ -144,6 +161,7 @@
   </div>
 
   <div id="divAltura">
+    <p class="titulo_div">| Dimensiones de la ventana</p>
     <p>Width: <span id="anchoNavegador"></span>px X Height: <span id="altoNavegador"></span>px</p>
   </div>
   <script type="text/javascript" src="popup.js"></script>
