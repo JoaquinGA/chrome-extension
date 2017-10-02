@@ -56,17 +56,20 @@ function mostrarDimensiones() {
       var selectPass = document.getElementById("inputPass");
       selectPass.select();
       document.execCommand("copy");
-      console.log('pass copiado!');
+      mensajeInfo("Contraseña copiada al portapapeles");
     }
 
     function funcionCopiarLorem() {
       var selectLorem = document.getElementById("inputLorem");
       selectLorem.select();
       document.execCommand("copy");
-      console.log('lorem copiado!');
+      mensajeInfo("Lorem Ipsum copiado al portapapeles");
     }
 
 
+    function mensajeInfo(mensaje){
+      document.getElementById("spanInfo").innerHTML = mensaje;
+    }
 
 
 

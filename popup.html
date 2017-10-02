@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <style media="screen">
       html{
         width: 400px;
@@ -14,6 +15,7 @@
         width: 15%;
         float:right;
         margin-bottom: 10px;
+        margin-right: 4px;
       }
 
       button#botonCopiarPass{
@@ -23,12 +25,20 @@
       }
 
       div#divGenerador{
-        height: 50px
+        height: 50px;
+        margin-top: 10px;
       }
 
-      #selectLongitusPass, #checkMayus, #checkNum, #checkMin{
+      #checkMayus, #checkNum, #checkMin{
         margin-right: 10px;
       }
+
+      #selectLongitudPass{
+        margin-right: 15px;
+        background: #FFF;
+        color: #000;
+      }
+
       #checkMayus, #checkNum, #checkMin, #checkCarac{
         margin-top: 4px;
       }
@@ -36,10 +46,13 @@
       #inputLorem{
         /*display: none;*/
         /*visibility: hidden;*/
+        margin-top: 10px;
+
       }
 
       #divLorem{
         height: 50px;
+        margin-top: 10px;
       }
 
       #divLorem button{
@@ -51,9 +64,43 @@
         width: 68%;
       }
 
+      button{
+        background: #FFF;
+        border: 1px solid;
+        color: #000;
+        cursor: pointer;
+        height: 30px;
+      }
+
+      #inputPass, #inputLorem{
+        height: 26px;
+        border: 1px solid #000;
+      }
+
+
+      #divInfo{
+        height: 33px;
+        color: #FFF;
+        background: silver;
+      }
+      #pDivInfo{
+        padding: 10px;
+      }
+
+      #divAltura{
+        margin-top: 20px;
+      }
+
     </style>
   </head>
   <body>
+
+
+  <div id="divInfo">
+    <p id="pDivInfo">ChromeDev | <span id="spanInfo"></span></p>
+  </div>
+
+
   <div id="divGenerador">
 
     <input name="pass" id="inputPass" type="text">
@@ -70,11 +117,11 @@
       <option value="30">30</option>
     </select>
 
+    <label for="checkMin">Low</label>
+    <input name="checkMin" type="checkbox" id="checkMin" value="checkMin" checked="true">
+
     <label for="checkMayus">Upp</label>
     <input name="checkMayus" type="checkbox" id="checkMayus" value="checkMayus">
-
-    <label for="checkMin">Low</label>
-    <input name="checkMin" type="checkbox" id="checkMin" value="checkMin">
 
     <label for="checkNum">Num</label>
     <input name="checkNum" type="checkbox" id="checkNum" value="checkNum">
